@@ -1,0 +1,163 @@
+/* ---------- Global Styles ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f6fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ---------- Header / Navigation ---------- */
+header {
+    background-color: #1E90FF; /* Blue */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #ffce00;
+    color: #1E90FF;
+}
+
+/* ---------- Sections ---------- */
+section {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+/* Section Titles */
+.about-me h2,
+.skills-section .section-title,
+.project-title,
+.course-section .section-title,
+.contact h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #1E90FF;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #1E90FF;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* About Me */
+.about-me p {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* Skills Section */
+.skills-list, .features-list, .courses-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skills-list li, .features-list li, .courses-list li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* Project Section */
+.project p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.tech-stack {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.tech-stack th, .tech-stack td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.tech-stack th {
+    background-color: #1E90FF;
+    color: white;
+}
+
+/* Courses Section */
+.courses-list li strong {
+    color: #1E90FF;
+}
+
+/* Contact Section */
+.contact a {
+    color: #1E90FF;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.contact p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav a {
+        margin: 0 8px;
+        font-size: 0.9rem;
+    }
+
+    section {
+        margin: 40px 20px;
+        padding: 30px 20px;
+    }
+
+    .about-me h2,
+    .skills-section .section-title,
+    .project-title,
+    .course-section .section-title,
+    .contact h2 {
+        font-size: 1.5rem;
+    }
+}
